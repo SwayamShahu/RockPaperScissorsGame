@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game:Rock | Paper | Scissors</title>
+
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+HR:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <h4> <span>Loading </span><i>Your Experience</i></h4>
+    </div>
+    <div class="main">
+        <div class="nav">
+            <h1>Game:Rock | Paper | Scissors</h1>
+        </div>
+        <div class="headerDesign">
+            <div class="headerDesign1">
+                <h1 ><span style="font-family: 'Merriweather', serif;">The Game</span> <span style="font-family: 'Playwrite HR', cursive; color: red;">Rock , Paper & Scissors</span></h1>
+                <h1><span style="font-family: 'Playwrite HR', cursive; color: red;">Embrace the Fun:</span> <span style="font-family: 'Merriweather', serif;">With Computer</span></h1>
+            </div>
+            <div class="headerDesign2">
+                <video autoplay loop muted > 
+                <source src= "videoplayback.mp4" type="video/mp4"/> </video>
+            </div>
+        </div>
+        <div class="page1">
+            <div class="page1content">
+                <br>
+                <h4 id="page1contentHeading">How to Play Rock Paper Scissors</h4>
+                <br> <br>
+                <p id="page1para">Rock Paper Scissors is a simple hand game played between two people. The game has three possible outcomes: a draw, a win, or a loss for each player. Despite its simplicity, it involves strategy and psychology, making it a popular choice for quick decision-making or as a simple pastime.</p>
+                <br>
+                <h4>Rules:</h4>
+                <br>
+                <ul class="ruLesUl">1. Rock crushes scissors (rock wins)</ul>
+                <ul class="ruLesUl">2. Scissors cuts paper (scissors win)</ul>
+                <ul class="ruLesUl">3. Paper covers rock (paper wins)</ul>
+                <ul class="ruLesUl">4. If both players choose the same gesture, the game is a tie and typically played again</ul>
+                <br>
+            </div>
+        </div>
+        
+        <br> <br>
+
+        <div id="scoll">
+            <div id="scollcontainer">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+            </div>
+            <div id="scollcontainer">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+            </div>
+        </div>
+        <br> <br>
+
+        <div id="page2">
+            <h4>Let's play a game now</h4>
+            <br>
+            <div class="playGame">
+                <div class="choice">
+                    <img src="main3.jpg">
+                    <br>
+                    <button id="clickRock">Rock</button>
+                    <br>
+                </div>
+                <div class="choice">
+                    <img src="main1.jpg">
+                    <br>
+                    <button  id="clickPaper">Paper</button>
+                    <br>
+                </div>
+                <div class="choice">
+                    <img src="main2.jpg">
+                    <br>
+                    <button id="clickScissor">Scissor</button>
+                    <br>
+                </div>
+            </div>
+            <center>
+                <br>
+                <button id="submit">Submit</button>
+                <br>
+                <br>
+            </center>
+
+            <center>
+            <div class="yourchoice">
+                <h4>Your Choice</h4>
+                <div id="yourChoice">
+                    No Choice yet
+                </div>
+                <br>
+            </div>
+            <div class="computerChoice">
+                <h4>Computer Choice</h4>
+                <div id="computerChoice">
+                </div>
+            </div>
+            <div class="result">
+                <br>
+                <h4>Result</h4>
+                <div id="result">
+                </div>
+            </div>
+            </center>
+        </div>
+
+        <br> <br>
+
+        <div class="footer">
+            <div class="footerContent">
+                <br>
+                <center>
+                    <h4>Thank You For Trying My Website</h4>
+                </center>
+                
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

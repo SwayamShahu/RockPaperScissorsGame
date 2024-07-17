@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(5, 4, 4);
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+    
+body{
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+} 
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(5, 4, 4);
+}
+
+.loader h4{
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+}
+.loader h4 span{
+    color: red;
+}
+.nav{
+    width: 100vw;
+    height: fit-content;
+    border-bottom: 2px solid white;
+}
+.nav h1{
+    font-size: 4vw;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 500;
+    text-align: end;
+    margin-right: 25px;
+}
+
+#scoll{
+    opacity: 0%;
+}
+
+.headerDesign{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+.headerDesign1 , .headerDesign2{
+    width: 49%;
+    height: 50%;
+    margin: 1%;
+}
+
+.headerDesign h1{
+    font-size: 2.5vw;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.headerDesign2 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.page1content{
+    width: 90%;
+    padding: 5px;
+    border: 2px solid rgb(102, 102, 102);
+}
+
+.page1content h4{
+    text-align: left;
+    font-size: 2vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+}
+
+#page1contentHeading{
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+}
+#page1para{
+    width: 100%;
+    font-size: 1.3vw;
+    text-align: left;
+    margin-left: 3px;
+    color: rgb(234, 234, 234);
+    line-height: 20px;
+
+}
+
+.ruLesUl{
+    width: 100%;
+    font-size: 1.3vw;
+    text-align: left;
+    margin-left: 3px;
+    line-height: 20px;
+    color: rgb(234, 234, 234);
+}
+
+@keyframes scrollanimation {
+    from{
+        transform: translate(0);
+    }to{
+        transform: translateX(-100%);
+    } 
+}
+
+#scoll{
+    width: 100%;
+    height: 10.57vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: 0%;
+}
+
+#scollcontainer{
+    display: inline-block;
+    width: 100%;
+    height: 10.57vw;
+    animation-name: scrollanimation;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+}
+
+#scollcontainer img{
+    width:10.57vw;
+    height: fit-content;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#page2{
+    width: 100vw;
+    height: fit-content;
+}
+
+#page2 h4{
+    margin-left: 0.8%;
+    font-size: 2vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+
+}
+
+.playGame{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice{
+   width: 32.8%;
+   margin: 0.5%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.choice img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#yourChoice{
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(102, 102, 102);
+    text-align: center;
+    padding: 2px;
+    color: rgb(102, 102, 102);
+}
+
+#computerChoice{
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(102, 102, 102);
+    text-align: center;
+    padding: 2px;
+    color: rgb(102, 102, 102);
+}
+
+#result{
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(102, 102, 102);
+    text-align: center;
+    padding: 2px;
+    color: rgb(102, 102, 102);
+}
+.choice button{
+    padding: 10px 20px;
+    background-color:transparent;
+    border:2px solid cyan;
+    color: cyan;
+    transition:all linear 0.2s;
+}
+
+.choice button:hover{
+    background-color:cyan;
+    color:black;
+}
+
+#submit{
+    padding: 10px 20px;
+    background-color:transparent;
+    border:2px solid rgb(255, 32, 32);
+    color: rgb(255, 32, 32);
+    transition:all linear 0.2s;
+}
+
+#submit:hover{
+    background-color:rgb(255, 32, 32);
+    color:black;
+}
+
+.footer{
+    width: 100vw;
+    height: fit-content;
+}
+
+.footerContent{
+    border-top: 2px solid white;
+}
+
+.footerContent h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+}
+
+@media screen  and (max-width: 600px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(5, 4, 4);
+        color: white;
+    }
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .nav{
+        width: 100vw;
+        height: fit-content;
+        border-bottom: 2px solid white;
+    }
+    .nav h1{
+        font-size: 5vw;
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-weight: 500;
+        text-align: end;
+        margin-right: 25px;
+    }
+    
+    .headerDesign{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        flex-direction: column;
+    }
+    
+    .headerDesign1 , .headerDesign2{
+        width: 100%;
+        height: 50%;
+        margin: 1%;
+    }
+    
+    .headerDesign h1{
+        font-size: 4vw;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .headerDesign2 video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 4px;
+    }
+    
+    .page1{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page1content{
+        width: 90%;
+        padding: 5px;
+        border: 0.8px solid rgb(207, 207, 207);
+    }
+    
+    .page1content h4{
+        text-align: left;
+        font-size: 4vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+    }
+    
+    #page1contentHeading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+    }
+    #page1para{
+        width: 100%;
+        font-size: 2.5vw;
+        text-align: left;
+        margin-left: 3px;
+        color: rgb(207, 207, 207);
+        line-height: 20px;
+        
+    }
+    
+    .ruLesUl{
+        width: 100%;
+        font-size: 2.5vw;
+        text-align: left;
+        margin-left: 3px;
+        color: rgb(207, 207, 207);
+        line-height: 20px;
+        justify-content: center;
+    }
+    
+    @keyframes scrollanimation {
+        from{
+            transform: translate(0);
+        }to{
+            transform: translateX(-100%);
+        } 
+    }
+    
+    #scoll{
+        width: 100%;
+        height: 10.57vw;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #scollcontainer{
+        display: inline-block;
+        width: 100%;
+        height: 10.57vw;
+        margin-left: 20px;
+        animation-name: scrollanimation;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+    }
+    
+    #scollcontainer img{
+        width:10.57vw;
+        height: fit-content;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    #page2{
+        width: 100vw;
+        height: fit-content;
+    }
+    
+    #page2 h4{
+        margin-left: 2%;
+        font-size: 4vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+    
+    }
+    
+    .playGame{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .choice{
+       width: 32.8%;
+       margin: 0.5%;
+       height: fit-content;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    
+    .choice img{
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    
+    #yourChoice{
+        width: 300px;
+        height: 30px;
+        border: 2px solid rgb(102, 102, 102);
+        text-align: center;
+        padding: 2px;
+        font-size: small;
+        color: rgb(102, 102, 102);
+    }
+    
+    #computerChoice{
+        width: 300px;
+        height: 30px;
+        border: 2px solid rgb(102, 102, 102);
+        text-align: center;
+        padding: 2px;
+        font-size: small;
+        color: rgb(102, 102, 102);
+    }
+    
+    #result{
+        width: 300px;
+        height: 30px;
+        border: 2px solid rgb(102, 102, 102);
+        text-align: center;
+        padding: 2px;
+        font-size: small;
+        color: rgb(102, 102, 102);
+    }
+    .choice button{
+        padding: 10px 20px;
+        background-color:transparent;
+        border:2px solid cyan;
+        color: cyan;
+        transition:all linear 0.2s;
+        font-size: small;
+        
+    }
+    
+    .choice button:hover{
+        background-color:cyan;
+        color:black;
+    }
+    
+    #submit{
+        padding: 10px 20px;
+        background-color:transparent;
+        border:2px solid rgb(255, 32, 32);
+        color: rgb(255, 32, 32);
+        transition:all linear 0.2s;
+    }
+    
+    #submit:hover{
+        background-color:rgb(255, 32, 32);
+        color:black;
+    }
+    
+    .footer{
+        width: 100vw;
+        height: fit-content;
+    }
+    
+    .footerContent{
+        border-top: 0.5px solid white;
+    }
+    
+    .footerContent h4{
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+    }
+    
+}
