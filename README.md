@@ -7,8 +7,7 @@ This project demonstrates how to use `Math.random()` and `if-else` logic to crea
 
 ---
 
-## 🔍 Keywords (SEO Optimized)
-
+## 🔍 Keywords
 Rock Paper Scissors JavaScript, JavaScript mini project, HTML CSS JS game, beginner JavaScript project, simple web game, JavaScript DOM project, Math.random example, frontend practice project
 
 ---
